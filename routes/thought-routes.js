@@ -3,4 +3,6 @@ const thoughtController = require('../controllers/thought-controller');
 
 const router = express.Router();
 
-// Define thought routes
+router.post('/thoughts', thoughtController.createThought);
+
+module.exports = router;
